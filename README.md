@@ -52,6 +52,10 @@ AI Legal Advisor (Groq LLaMA 3.1) — conversational follow-up
 - Frontend: [legal-insight-finder.vercel.app](https://legal-insight-finder.vercel.app)
 - Backend API: [euriken-nyay-khoj.hf.space](https://euriken-nyay-khoj.hf.space)
 
+## Backend Repository
+
+The backend API (Flask + PostgreSQL) is hosted in a separate repository. You can find its source code here: [github.com/Euriken/legal-backend](https://github.com/Euriken/legal-backend)
+
 ## Setup Instructions
 
 ### Backend
