@@ -82,7 +82,7 @@ npm run dev
 
 ## Dataset
 
-22,904 Supreme Court of India judgments sourced from OpenNyAI InJudgements and OpenNyaya (Kaggle), spanning 1950–2024.
+22,904 Supreme Court of India judgments sourced from [OpenNyAI InJudgements](https://github.com/OpenNyAI/Opennyai) and [OpenNyaya (Kaggle)](https://www.kaggle.com/datasets/gaurav41/opennyaya-supreme-court-clean), spanning 1950–2024.
 
 ## Security Note
 
