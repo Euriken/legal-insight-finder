@@ -32,6 +32,7 @@ export const LegalAdvisor = ({
   const [caseContext, setCaseContext] = useState<string | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   // Load chat history on mount
   useEffect(() => {
@@ -57,7 +58,8 @@ export const LegalAdvisor = ({
 
   // Scroll to bottom
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const el = messagesContainerRef.current;
+    if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -180,7 +182,7 @@ export const LegalAdvisor = ({
       </div>
 
       {/* Message List */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div ref={messagesContainerRef} className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
           <div className="flex flex-col items-center justify-center h-full text-center max-w-md mx-auto space-y-5">
             <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/25 flex items-center justify-center text-xl text-primary">
